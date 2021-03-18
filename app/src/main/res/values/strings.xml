@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="password">Password</string>
+    <string name="please_sign_in">please sign in to continue</string>
+    <string name="text_login_button">Login</string>
+    <string name="create_acoount">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="fullnam">Fullname</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="text_have">Have an account?</string>
+    <string name="text_signin">sign in</string>
+    <string name="signin">Sign In</string>
+    <string name="back">back</string>
+    <string name="mulan">Mulan</string>
+    <string name="all">All</string>
+    <string name="drama">Drama</string>
+    <string name="romance">Romance</string>
+    <string name="horror">Horror</string>
+    <string name="advanture">Advanture</string>
+    <string name="action">Action</string>
+    <string name="image_view">image view</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item_movie"
+        android:layout_width="160dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="@dimen/_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/iv_item_movie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_view"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poster" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_title_items"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/mulan"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cv_item_movie"
+        app:layout_constraintTop_toTopOf="@+id/cv_item_movie" />
+
+    <TextView
+        android:id="@+id/tv_release_date"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="64dp"
+        android:text="Realese : 25 March 2021"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_items"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_items"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_items" />
+
+    <TextView
+        android:id="@+id/tv_genre_movie"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="12dp"
+        android:text="Genre : advanture, action"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="@+id/tv_release_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_items" />
+
+    <TextView
+        android:id="@+id/tv_sinopsis"
+        android:layout_width="211dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="8dp"
+        android:text="The film Mulan tells the story of a young Chinese woman who disguises herself as a man to fight in her father's place."
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="160dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
